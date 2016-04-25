@@ -2,8 +2,6 @@
 
 This is an repository of golang benchmark example.
 
-Why Hello function called too many times...
-
 * c1: the BenchmarkHello function called count
 * c2: the Hello function called count
 
@@ -27,3 +25,7 @@ BenchmarkHello-4    2016/04/25 20:18:24 c1: 0
  5000000           481 ns/op
  ok     github.com/higebu/go-hello-bench    2.778s
 ```
+
+Q. Why Hello function called too many times...
+
+A. See launch() function in [testing/benchmark.go](https://golang.org/src/testing/benchmark.go?#L200)
